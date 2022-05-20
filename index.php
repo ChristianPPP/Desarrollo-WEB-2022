@@ -77,7 +77,7 @@
             </label>
             <br>
             <label> Descargas
-                 <input type="checkbox" name="tipoUsos[]" value="Descargas">
+                <input type="checkbox" name="tipoUsos[]" value="Descargas">
             </label>
             <br>
             <label> Videoconferencias
@@ -149,8 +149,6 @@
         $archivo = $carnetEstudiantil['name'];
         echo ' <br> <img src="'.$rutax.$archivo.'">';
     }
-
-
     ?>
 </body>
 </html>
