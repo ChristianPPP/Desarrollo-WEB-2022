@@ -116,7 +116,7 @@
     $observaciones = $_REQUEST['observaciones'];
     $carnetEstudiantil = $_FILES['carnetEstudiantil'];
     $tiposUso = $_REQUEST['tipoUsos'];
-    $pathFile = $_SERVER['DOCUMENT_ROOT'].'/files/'.$carnetEstudiantil['name'];
+    $pathFile = $_SERVER['DOCUMENT_ROOT'].'/Laboratorio02/files/'.$carnetEstudiantil['name'];
     move_uploaded_file($carnetEstudiantil['tmp_name'], $pathFile);
     
     echo "<br> <label> 
@@ -145,7 +145,7 @@
     </label>";
 
     if($carnetEstudiantil['name']!=""){
-        $rutax = "../files/";
+        $rutax = "../Laboratorio02/files/";
         $archivo = $carnetEstudiantil['name'];
         echo ' <br> <img src="'.$rutax.$archivo.'">';
     }
